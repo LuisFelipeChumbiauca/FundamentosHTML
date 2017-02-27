@@ -71,6 +71,11 @@
   </fieldset>
     <fieldset>
       <legend><h2>Agregar Estudios</h2></legend>
+
+      <p>Año:
+        <input type="year" name="" value="2016"  required/>
+      </p>
+
       <p>
   			<label for="institucion">Institución</label>
   			<input type="text" name="institucion" placeholder="Ejemplo: Universidad de Salamanca" required>
@@ -80,20 +85,14 @@
   			<label for="Lugar">Lugar</label>
   			<input type="text" name="Lugar" placeholder="Ejemplo: Lima - Perú" required>
   		</p>
-        <h3>¿Culminó?</h3>
-          <label> <input type="radio" name="Si" value="1">Si<label>
-          <label> <input type="radio" name="No" value="2">No</label>
-      <p>
 
-        <p>
-          <label for="genre">¿Concluyó?</label>
-          <br>
-          <input type="radio" name="genre"> Si
-          <br>
-          <input type="radio" name="genre"> No
-        </p>
+          <label for="Genre"><h3>¿Culminó?</label>
+          <input type="radio" name="Genre"> Si
+          <input type="radio" name="Genre"> No
+          </h3>
 
-  			<input type="submit" value="Registrar">
+
+  			<input type="submit" value="Enviar">
   		</p>
       </fieldset>
   </body>
