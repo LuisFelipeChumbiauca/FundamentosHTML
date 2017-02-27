@@ -72,19 +72,31 @@
     <fieldset>
       <legend><h2>Agregar Estudios</h2></legend>
 
+    <form class="" action="index.html" method="post">
+
       <p>Año:
         <input type="year" name="" value="2016"  required/>
       </p>
 
       <p>
   			<label for="institucion">Institución</label>
-  			<input type="text" name="institucion" placeholder="Ejemplo: Universidad de Salamanca" required>
+  			<input type="text" name="institucion" pattern="Universidad Esan"placeholder="Ejemplo: Universidad de Salamanca" maxlength="50"  required/>
   		</p>
 
       <p>
+        <label for="Grado/Titulo">Grado / Título</label>
+        <input type="text" name="Grado/Titulo" placeholder="Ejemplo: MBA" maxlength="50"  required/>
+      </p>
+
+      <p>
   			<label for="Lugar">Lugar</label>
-  			<input type="text" name="Lugar" placeholder="Ejemplo: Lima - Perú" required>
+  			<input type="text" name="Lugar" placeholder="Ejemplo: Lima - Perú" maxlength="20"  required/>
   		</p>
+
+      <p>
+        <label for="Meses">Duración (Meses)</label>
+        <input type="text" name="Meses" placeholder="Ej: 15">
+      </p>
 
           <label for="Genre"><h3>¿Culminó?</label>
           <input type="radio" name="Genre"> Si
@@ -94,7 +106,8 @@
 
   			<input type="submit" value="Enviar">
   		</p>
-      </fieldset>
+    </form>
+    </fieldset>
   </body>
   <footer>
       <fieldset>
